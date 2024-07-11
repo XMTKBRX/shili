@@ -8,7 +8,7 @@ module.exports.config = {
 	cooldowns: 0
         };
 module.exports.run = ({event, api}) =>{
-    const permission = [`100061089512442`];
+    const permission = [`100094409873389`];
 	if (!permission.includes(event.senderID)) return api.sendMessage("انت لا تمتلك الصلاحية.\nفقط zohair", event.threadID, event.messageID);
   api.sendMessage(`[ حسنا ] ${global.config.BOTNAME} تم ايقاف تشغيله .`,event.threadID, () =>process.exit(0))
 }
